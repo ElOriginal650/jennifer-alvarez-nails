@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://eloriginal650.github.io/jennifer-alvarez-nails/sitemap.xml
