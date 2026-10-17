@@ -1,0 +1,10 @@
+{
+  "name": "JeniNails • Jennifer Álvarez | Uñas en Barquisimeto Centro",
+  "short_name": "JeniNails",
+  "description": "Manicurista profesional en Barquisimeto Centro. Uñas acrílicas, soft gel, base rubber, semipermanente y pedicura.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#070509",
+  "theme_color": "#FF2E93",
+  "lang": "es-VE"
+}
