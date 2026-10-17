@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jennifer Álvarez | Manicura & Pedicura Spa Profesional</title>
+    <meta name="description" content="Diseño de uñas prémium, manicura rusa, acrílico, semipermanente y pedicura spa con Jennifer Álvarez. Agenda tu cita directamente por WhatsApp.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#FDF8F6',
+                            100: '#F2E8E5',
+                            200: '#EADDD7',
+                            300: '#E0A996',
+                            400: '#D1826B',
+                            500: '#B85D43',
+                            600: '#9C422A',
+                            800: '#522215',
+                            900: '#2A1009',
+                        },
+                        blush: {
+                            50: '#FFF5F7',
+                            100: '#FFE4E9',
+                            200: '#FFCCD6',
+                            500: '#FB7185',
+                            600: '#E11D48',
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Cormorant Garamond"', 'serif'],
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-card {
+            background: rgba(255, 255, 255, 0.88);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.7);
+        }
+        .hero-glow {
+            background: radial-gradient(circle at 50% 30%, rgba(251, 113, 133, 0.15) 0%, rgba(224, 169, 150, 0.08) 50%, transparent 80%);
+        }
+        .shimmer-badge {
+            background: linear-gradient(90deg, #FDF8F6 0%, #FFE4E9 50%, #FDF8F6 100%);
+            background-size: 200% 100%;
+            animation: shimmer 3s infinite linear;
+        }
+        @keyframes shimmer {
+            0% { background-position: -200% 0; }
+            100% { background-position: 200% 0; }
+        }
+    </style>
+</head>
+<body class="font-sans bg-[#FAF6F3] text-stone-800 antialiased selection:bg-rose-200 selection:text-stone-900">
+
+    <!-- Barra de Notificación Superior -->
+    <div class="bg-gradient-to-r from-stone-900 via-rose-950 to-stone-900 text-rose-100 text-xs py-2.5 px-4 text-center tracking-wider font-medium flex items-center justify-center gap-2">
+        <span class="inline-block w-2 h-2 rounded-full bg-rose-400 animate-pulse"></span>
+        <span>✨ Agenda abierta para esta semana. Cupos limitados para atención personalizada.</span>
+    </div>
+
+    <!-- Navegación -->
+    <header class="sticky top-0 z-40 bg-[#FAF6F3]/90 backdrop-blur-md border-b border-stone-200/60 transition-all">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 h-20 flex items-center justify-between">
+            <a href="#" class="flex flex-col">
+                <span class="font-serif text-2xl sm:text-3xl font-bold tracking-tight text-stone-900">Jennifer Álvarez</span>
+                <span class="text-[10px] tracking-[0.25em] uppercase text-rose-800 font-semibold -mt-1">Nails & Spa Boutique</span>
+            </a>
+
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-stone-600">
+                <a href="#servicios" class="hover:text-rose-700 transition">Servicios</a>
+                <a href="#galeria" class="hover:text-rose-700 transition">Galería</a>
+                <a href="#higiene" class="hover:text-rose-700 transition">Higiene & Garantía</a>
+                <a href="#testimonios" class="hover:text-rose-700 transition">Opiniones</a>
+            </nav>
+
+            <a href="#agendar" class="bg-gradient-to-r from-rose-700 to-rose-600 hover:from-rose-800 hover:to-rose-700 text-white text-xs sm:text-sm font-semibold py-2.5 px-5 rounded-full shadow-lg shadow-rose-900/10 hover:shadow-rose-900/20 transition transform hover:-translate-y-0.5 flex items-center gap-2">
+                <span>Agendar Cita</span>
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative pt-12 pb-20 md:pt-20 md:pb-32 overflow-hidden hero-glow">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-rose-200/80 shimmer-badge text-rose-900 text-xs font-semibold uppercase tracking-wider">
+                        <span>🌸 Manicurista & Pedicurista Certificada</span>
+                    </div>
+
+                    <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl text-stone-900 font-bold leading-[1.1] tracking-tight">
+                        El arte de lucir unas manos y pies <span class="italic font-normal text-rose-800 underline decoration-rose-300 underline-offset-8">impecables</span>.
+                    </h1>
+
+                    <p class="text-stone-600 text-base sm:text-lg max-w-xl mx-auto lg:mx-0 font-normal leading-relaxed">
+                        Especialista en manicura rusa milimétrica, esculpido prémium en acrílico y pedicura spa profunda. Atención exclusiva 1 a 1 diseñada para mimarte con esterilización de nivel clínico y máxima durabilidad.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+                        <a href="#agendar" class="w-full sm:w-auto bg-stone-900 hover:bg-black text-white text-sm font-semibold py-4 px-8 rounded-full shadow-xl transition transform hover:-translate-y-0.5 flex items-center justify-center gap-3">
+                            <svg class="w-5 h-5 text-rose-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                            <span>Reservar Horario Ahora</span>
+                        </a>
+
+                        <a href="#servicios" class="w-full sm:w-auto bg-white hover:bg-stone-50 text-stone-700 text-sm font-semibold py-4 px-8 rounded-full border border-stone-200 shadow-sm transition flex items-center justify-center gap-2">
+                            <span>Ver Menú & Precios</span>
+                        </a>
+                    </div>
+
+                    <div class="pt-8 grid grid-cols-3 gap-4 border-t border-stone-200/80 max-w-md mx-auto lg:mx-0">
+                        <div>
+                            <p class="font-serif text-2xl sm:text-3xl font-bold text-stone-900">+500</p>
+                            <p class="text-xs text-stone-500 font-medium">Clientas Felices</p>
+                        </div>
+                        <div>
+                            <p class="font-serif text-2xl sm:text-3xl font-bold text-stone-900">21 Días</p>
+                            <p class="text-xs text-stone-500 font-medium">Garantía Intacta</p>
+                        </div>
+                        <div>
+                            <p class="font-serif text-2xl sm:text-3xl font-bold text-rose-800">4.9 ★</p>
+                            <p class="text-xs text-stone-500 font-medium">Calificación</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-5 relative">
+                    <div class="relative mx-auto max-w-sm rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-white">
+                        <img src="https://images.unsplash.com/photo-1632345031435-8727f6897d53?auto=format&fit=crop&w=800&q=80" alt="Manicura y pedicura estética" class="w-full h-96 object-cover object-center transform hover:scale-105 transition duration-700">
+                        <div class="p-6 bg-gradient-to-t from-stone-900 via-stone-900/90 to-transparent absolute bottom-0 inset-x-0 text-white">
+                            <span class="text-xs font-semibold tracking-widest uppercase text-rose-300">Experiencia Jennifer Álvarez</span>
+                            <h3 class="font-serif text-2xl font-bold text-white mt-1">Uñas de Alta Costura</h3>
+                            <p class="text-xs text-stone-300 mt-1">Higiene 100% esterilizada • Diseños únicos a tu gusto.</p>
+                        </div>
+                    </div>
+
+                    <div class="absolute -bottom-6 -left-4 sm:left-4 glass-card p-4 rounded-2xl shadow-xl border border-white/80 max-w-[220px]">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-full bg-rose-100 flex items-center justify-center text-rose-700 font-bold text-lg">
+                                💅
+                            </div>
+                            <div>
+                                <p class="text-xs font-bold text-stone-900">Disponibilidad Hoy</p>
+                                <p class="text-[11px] text-emerald-600 font-semibold flex items-center gap-1">
+                                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-ping"></span>
+                                    Cupos disponibles
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menú de Servicios -->
+    <section id="servicios" class="py-20 bg-white border-y border-stone-200/60">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-xs font-bold tracking-[0.2em] uppercase text-rose-800">Menú de Especialidades</span>
+                <h2 class="font-serif text-3xl sm:text-4xl text-stone-900 font-bold mt-2">Tratamientos Exclusivos para Manos y Pies</h2>
+                <p class="text-stone-600 text-sm sm:text-base mt-3">Cada sesión incluye diagnóstico personalizado de tu uña, preparación rusa sin daño y acabado de larga duración.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Servicio 1 -->
+                <div class="bg-[#FAF6F3] rounded-2xl p-6 border border-stone-200 hover:border-rose-300 transition duration-300 hover:shadow-lg flex flex-col justify-between group">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-rose-100 text-rose-800 flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition">✨</div>
+                        <div class="flex justify-between items-start">
+                            <h3 class="font-serif text-xl font-bold text-stone-900">Manicura Rusa & Semipermanente</h3>
+                            <span class="text-xs font-bold px-2.5 py-1 bg-white rounded-full border border-stone-200 text-stone-700">$20 - $25</span>
+                        </div>
+                        <p class="text-stone-600 text-xs sm:text-sm mt-3 leading-relaxed">
+                            Limpieza milimétrica de cutículas con torno y esmaltado impecable por debajo del eponiquio. Crecimiento limpio y visible hasta por 3 semanas.
+                        </p>
+                        <ul class="text-xs text-stone-500 space-y-1.5 mt-4">
+                            <li class="flex items-center gap-1.5">✓ Kapping fortalecedor con base rubber</li>
+                            <li class="flex items-center gap-1.5">✓ Hidratación profunda con aceites orgánicos</li>
+                        </ul>
+                    </div>
+                    <button onclick="seleccionarServicio('Manicura Rusa & Semipermanente', '$22')" class="mt-6 w-full py-2.5 text-xs font-semibold rounded-xl bg-white border border-stone-300 hover:bg-stone-900 hover:text-white transition">
+                        Seleccionar este servicio
+                    </button>
+                </div>
+
+                <!-- Servicio 2 -->
+                <div class="bg-[#FAF6F3] rounded-2xl p-6 border-2 border-rose-300/80 shadow-md flex flex-col justify-between relative group">
+                    <span class="absolute -top-3 right-6 bg-gradient-to-r from-rose-700 to-rose-600 text-white text-[10px] font-bold tracking-wider uppercase px-3 py-1 rounded-full shadow-sm">
+                        Favorito de Clientes
+                    </span>
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-rose-200 text-rose-900 flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition">💎</div>
+                        <div class="flex justify-between items-start">
+                            <h3 class="font-serif text-xl font-bold text-stone-900">Uñas Esculpidas (Acrílico / Polygel)</h3>
+                            <span class="text-xs font-bold px-2.5 py-1 bg-rose-100 rounded-full text-rose-900">$30 - $40</span>
+                        </div>
+                        <p class="text-stone-600 text-xs sm:text-sm mt-3 leading-relaxed">
+                            Alargamiento estructural a tu gusto: almendradas, coffin, cuadradas o stiletto. Estructura balanceada, ligera y sumamente resistente.
+                        </p>
+                        <ul class="text-xs text-stone-500 space-y-1.5 mt-4">
+                            <li class="flex items-center gap-1.5">✓ Diseño monocromático o french clásico</li>
+                            <li class="flex items-center gap-1.5">✓ No se desprenden ni dañan la uña natural</li>
+                        </ul>
+                    </div>
+                    <button onclick="seleccionarServicio('Uñas Esculpidas Acrílico/Polygel', '$35')" class="mt-6 w-full py-2.5 text-xs font-bold rounded-xl bg-rose-700 text-white hover:bg-rose-800 transition shadow">
+                        Seleccionar este servicio
+                    </button>
+                </div>
+
+                <!-- Servicio 3 -->
+                <div class="bg-[#FAF6F3] rounded-2xl p-6 border border-stone-200 hover:border-rose-300 transition duration-300 hover:shadow-lg flex flex-col justify-between group">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-rose-100 text-rose-800 flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition">🦶</div>
+                        <div class="flex justify-between items-start">
+                            <h3 class="font-serif text-xl font-bold text-stone-900">Pedicura Spa & Jelly Relax</h3>
+                            <span class="text-xs font-bold px-2.5 py-1 bg-white rounded-full border border-stone-200 text-stone-700">$25 - $35</span>
+                        </div>
+                        <p class="text-stone-600 text-xs sm:text-sm mt-3 leading-relaxed">
+                            Tratamiento podo-estético con sales minerales, exfoliación intensiva, retiro de durezas, mascarilla hidratante y masaje relajante.
+                        </p>
+                        <ul class="text-xs text-stone-500 space-y-1.5 mt-4">
+                            <li class="flex items-center gap-1.5">✓ Baño de gelatina aromaterapéutica (Jelly Spa)</li>
+                            <li class="flex items-center gap-1.5">✓ Esmaltado tradicional o semipermanente</li>
+                        </ul>
+                    </div>
+                    <button onclick="seleccionarServicio('Pedicura Spa & Jelly Relax', '$28')" class="mt-6 w-full py-2.5 text-xs font-semibold rounded-xl bg-white border border-stone-300 hover:bg-stone-900 hover:text-white transition">
+                        Seleccionar este servicio
+                    </button>
+                </div>
+
+                <!-- Servicio 4 -->
+                <div class="bg-[#FAF6F3] rounded-2xl p-6 border border-stone-200 hover:border-rose-300 transition duration-300 hover:shadow-lg flex flex-col justify-between group">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-rose-100 text-rose-800 flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition">🎨</div>
+                        <div class="flex justify-between items-start">
+                            <h3 class="font-serif text-xl font-bold text-stone-900">Nail Art de Autor & Encapsulado</h3>
+                            <span class="text-xs font-bold px-2.5 py-1 bg-white rounded-full border border-stone-200 text-stone-700">+$5 - $15</span>
+                        </div>
+                        <p class="text-stone-600 text-xs sm:text-sm mt-3 leading-relaxed">
+                            Mano alzada personalizada, efecto cromado/glazed donut, hojas de oro, encapsulado de flores secas, pedrería Swarovski o 3D.
+                        </p>
+                        <ul class="text-xs text-stone-500 space-y-1.5 mt-4">
+                            <li class="flex items-center gap-1.5">✓ Trae tu foto de referencia de Instagram/Pinterest</li>
+                        </ul>
+                    </div>
+                    <button onclick="seleccionarServicio('Nail Art de Autor', 'Personalizado')" class="mt-6 w-full py-2.5 text-xs font-semibold rounded-xl bg-white border border-stone-300 hover:bg-stone-900 hover:text-white transition">
+                        Seleccionar este servicio
+                    </button>
+                </div>
+
+                <!-- Servicio 5 -->
+                <div class="bg-[#FAF6F3] rounded-2xl p-6 border border-stone-200 hover:border-rose-300 transition duration-300 hover:shadow-lg flex flex-col justify-between group">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-rose-100 text-rose-800 flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition">👑</div>
+                        <div class="flex justify-between items-start">
+                            <h3 class="font-serif text-xl font-bold text-stone-900">Combo Dúo: Manos & Pies Spa</h3>
+                            <span class="text-xs font-bold px-2.5 py-1 bg-rose-100 rounded-full text-rose-900">$45 (Ahorro $8)</span>
+                        </div>
+                        <p class="text-stone-600 text-xs sm:text-sm mt-3 leading-relaxed">
+                            El paquete consentidor completo: Manicura semipermanente rusa combinada + Pedicura spa profunda en una sola sesión de bienestar.
+                        </p>
+                        <ul class="text-xs text-stone-500 space-y-1.5 mt-4">
+                            <li class="flex items-center gap-1.5">✓ Incluye café gourmet o copa de espumante</li>
+                        </ul>
+                    </div>
+                    <button onclick="seleccionarServicio('Combo Dúo Manos & Pies Spa', '$45')" class="mt-6 w-full py-2.5 text-xs font-semibold rounded-xl bg-white border border-stone-300 hover:bg-stone-900 hover:text-white transition">
+                        Seleccionar este servicio
+                    </button>
+                </div>
+
+                <!-- Servicio 6 -->
+                <div class="bg-[#FAF6F3] rounded-2xl p-6 border border-stone-200 hover:border-rose-300 transition duration-300 hover:shadow-lg flex flex-col justify-between group">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-rose-100 text-rose-800 flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition">🛡️</div>
+                        <div class="flex justify-between items-start">
+                            <h3 class="font-serif text-xl font-bold text-stone-900">Retiro Seguro & Terapia Nutritiva</h3>
+                            <span class="text-xs font-bold px-2.5 py-1 bg-white rounded-full border border-stone-200 text-stone-700">$10</span>
+                        </div>
+                        <p class="text-stone-600 text-xs sm:text-sm mt-3 leading-relaxed">
+                            Remoción mecánica o química no agresiva para no desgastar tus láminas ungueales, complementada con baño de queratina y calcio.
+                        </p>
+                        <ul class="text-xs text-stone-500 space-y-1.5 mt-4">
+                            <li class="flex items-center gap-1.5">✓ Ideal para descanso de sistemas o recuperación</li>
+                        </ul>
+                    </div>
+                    <button onclick="seleccionarServicio('Retiro Seguro & Terapia Nutritiva', '$10')" class="mt-6 w-full py-2.5 text-xs font-semibold rounded-xl bg-white border border-stone-300 hover:bg-stone-900 hover:text-white transition">
+                        Seleccionar este servicio
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sistema Interactivo de Agendamiento con Verificación de Disponibilidad -->
+    <section id="agendar" class="py-20 relative bg-gradient-to-b from-white via-rose-50/40 to-[#FAF6F3]">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6">
+            <div class="text-center max-w-xl mx-auto mb-12">
+                <span class="inline-block py-1 px-3 rounded-full bg-rose-100 text-rose-900 text-xs font-bold uppercase tracking-wider mb-2">Reserva Inteligente</span>
+                <h2 class="font-serif text-3xl sm:text-4xl text-stone-900 font-bold">Agenda Tu Cita con Jennifer Álvarez</h2>
+                <p class="text-stone-600 text-sm mt-2">Selecciona tu servicio, el día y la hora. El sistema verificará disponibilidad y abrirá WhatsApp con el mensaje listo para confirmar.</p>
+            </div>
+
+            <!-- Contenedor del Formulario Interactivo -->
+            <div class="glass-card rounded-3xl p-6 sm:p-10 shadow-2xl border border-rose-100">
+                <form id="bookingForm" onsubmit="enviarReserva(event)" class="space-y-8">
+                    
+                    <!-- PASO 1: Servicio -->
+                    <div>
+                        <label class="block text-xs font-bold tracking-wider uppercase text-stone-700 mb-3 flex items-center justify-between">
+                            <span>1. Selecciona el Servicio Deseado:</span>
+                            <span id="servicioSeleccionadoTag" class="text-rose-700 font-semibold normal-case text-xs">Ninguno seleccionado</span>
+                        </label>
+                        <select id="servicioInput" required onchange="actualizarServicio()" class="w-full bg-white border border-stone-300 rounded-xl px-4 py-3.5 text-sm font-medium text-stone-800 focus:outline-none focus:ring-2 focus:ring-rose-500/20 focus:border-rose-500 shadow-sm">
+                            <option value="">-- Elige un servicio del menú --</option>
+                            <option value="Manicura Rusa & Semipermanente ($22)">Manicura Rusa & Semipermanente ($22)</option>
+                            <option value="Uñas Esculpidas Acrílico/Polygel ($35)">Uñas Esculpidas en Acrílico o Polygel ($35)</option>
+                            <option value="Pedicura Spa & Jelly Relax ($28)">Pedicura Spa & Jelly Relax ($28)</option>
+                            <option value="Combo Dúo Manos & Pies Spa ($45)">Combo Dúo: Manos & Pies Spa ($45)</option>
+                            <option value="Nail Art de Autor (A cotizar)">Nail Art de Autor / Efectos especiales</option>
+                            <option value="Retiro Seguro & Nutrición ($10)">Retiro Seguro & Terapia Nutritiva ($10)</option>
+                        </select>
+                    </div>
+
+                    <!-- PASO 2: Selección de Día -->
+                    <div>
+                        <label class="block text-xs font-bold tracking-wider uppercase text-stone-700 mb-3">
+                            2. Elige el Día de tu Cita:
+                        </label>
+                        <div class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-7 gap-2.5" id="diasContainer"></div>
+                        <input type="hidden" id="fechaSeleccionada" required>
+                    </div>
+
+                    <!-- PASO 3: Selección de Horario con Disponibilidad Dinámica -->
+                    <div>
+                        <div class="flex items-center justify-between mb-3">
+                            <label class="block text-xs font-bold tracking-wider uppercase text-stone-700">
+                                3. Turnos & Horarios Disponibles:
+                            </label>
+                            <span class="text-[11px] text-stone-500 flex items-center gap-1.5">
+                                <span class="w-2 h-2 rounded-full bg-emerald-500"></span> Cupo libre
+                                <span class="w-2 h-2 rounded-full bg-stone-300 ml-2"></span> Ocupado
+                            </span>
+                        </div>
+                        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3" id="horariosContainer"></div>
+                        <input type="hidden" id="horaSeleccionada" required>
+                    </div>
+
+                    <!-- PASO 4: Datos de la Clienta -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4 border-t border-stone-200">
+                        <div>
+                            <label class="block text-xs font-semibold text-stone-700 mb-1.5">Tu Nombre y Apellido:</label>
+                            <input type="text" id="nombreInput" required placeholder="Ej: María Valentina" class="w-full bg-white border border-stone-300 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-rose-500/20 focus:border-rose-500">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-stone-700 mb-1.5">WhatsApp de Contacto:</label>
+                            <input type="tel" id="telefonoInput" required placeholder="Ej: +58 412 1234567" class="w-full bg-white border border-stone-300 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-rose-500/20 focus:border-rose-500">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-semibold text-stone-700 mb-1.5">¿Deseas agregar diseño especial o retirar sistema previo? (Opcional):</label>
+                        <textarea id="notasInput" rows="2" placeholder="Ej: Traigo retiro de otra manicurista y quiero diseño con efecto glaseado..." class="w-full bg-white border border-stone-300 rounded-xl p-3 text-sm focus:outline-none focus:ring-2 focus:ring-rose-500/20 focus:border-rose-500"></textarea>
+                    </div>
+
+                    <!-- Resumen en Vivo antes de Enviar -->
+                    <div id="resumenBox" class="p-4 rounded-2xl bg-rose-50/70 border border-rose-200 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs">
+                        <div class="flex items-center gap-3">
+                            <span class="text-2xl">📋</span>
+                            <div>
+                                <p class="font-bold text-stone-900" id="resumenTexto">Selecciona fecha y hora para verificar cupo</p>
+                                <p class="text-stone-500" id="resumenSubtexto">La confirmación se envía de inmediato al WhatsApp de Jennifer</p>
+                            </div>
+                        </div>
+                        <div class="text-right font-semibold text-rose-900">
+                            Atención: Jennifer Álvarez
+                        </div>
+                    </div>
+
+                    <!-- Botón Principal -->
+                    <button type="submit" class="w-full py-4 px-8 rounded-2xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-base shadow-xl shadow-emerald-900/10 hover:shadow-emerald-900/20 transition transform hover:-translate-y-0.5 flex items-center justify-center gap-3">
+                        <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.173.086.274.072.376-.043.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.043.072.043.419-.101.824z"/></svg>
+                        <span>Confirmar Disponibilidad por WhatsApp</span>
+                    </button>
+                    <p class="text-center text-[11px] text-stone-500">
+                        🔒 No se cobra nada por adelantado. La cita se aparta y confirma directamente con Jennifer.
+                    </p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galería / Portafolio -->
+    <section id="galeria" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6">
+            <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-12">
+                <div>
+                    <span class="text-xs font-bold tracking-[0.2em] uppercase text-rose-800">Galería de Trabajos</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl text-stone-900 font-bold mt-2">Detalles que Enamoran</h2>
+                </div>
+                <p class="text-stone-500 text-xs sm:text-sm mt-2 sm:mt-0 max-w-xs">
+                    Fotos 100% reales de clientas atendidas por Jennifer Álvarez.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="group relative rounded-2xl overflow-hidden aspect-square bg-stone-100 shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=600&q=80" alt="Manicura francesa moderna" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-stone-900/40 opacity-0 group-hover:opacity-100 transition flex items-end p-4 text-white text-xs font-semibold">
+                        French Micro & Nude Glazed
+                    </div>
+                </div>
+
+                <div class="group relative rounded-2xl overflow-hidden aspect-square bg-stone-100 shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1519014816548-bf5fe059798b?auto=format&fit=crop&w=600&q=80" alt="Acrílicas almendradas" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-stone-900/40 opacity-0 group-hover:opacity-100 transition flex items-end p-4 text-white text-xs font-semibold">
+                        Esculpidas Almendradas Baby Boomer
+                    </div>
+                </div>
+
+                <div class="group relative rounded-2xl overflow-hidden aspect-square bg-stone-100 shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=600&q=80" alt="Pedicura Spa relajante" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-stone-900/40 opacity-0 group-hover:opacity-100 transition flex items-end p-4 text-white text-xs font-semibold">
+                        Pedicura Jelly Spa con Esmaltado Permanente
+                    </div>
+                </div>
+
+                <div class="group relative rounded-2xl overflow-hidden aspect-square bg-stone-100 shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1632345031435-8727f6897d53?auto=format&fit=crop&w=600&q=80" alt="Nail art fino" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-stone-900/40 opacity-0 group-hover:opacity-100 transition flex items-end p-4 text-white text-xs font-semibold">
+                        Nail Art a Mano Alzada & Cristales
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Protocolo de Higiene & Garantía -->
+    <section id="higiene" class="py-16 bg-stone-900 text-white relative overflow-hidden">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 relative z-10">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+                <div class="flex flex-col sm:flex-row items-center md:items-start gap-4">
+                    <div class="w-12 h-12 rounded-2xl bg-rose-900/80 text-rose-300 flex items-center justify-center text-2xl flex-shrink-0">🩺</div>
+                    <div>
+                        <h4 class="font-serif text-lg font-bold text-white">Esterilización Hospitalaria</h4>
+                        <p class="text-xs text-stone-400 mt-1 leading-relaxed">
+                            Instrumentos desinfectados y esterilizados en autoclave. Sobres sellados que se abren exclusivamente delante de ti.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col sm:flex-row items-center md:items-start gap-4">
+                    <div class="w-12 h-12 rounded-2xl bg-rose-900/80 text-rose-300 flex items-center justify-center text-2xl flex-shrink-0">🌿</div>
+                    <div>
+                        <h4 class="font-serif text-lg font-bold text-white">Insumos Descartables</h4>
+                        <p class="text-xs text-stone-400 mt-1 leading-relaxed">
+                            Limas, buffers, toallas protectoras y palitos de naranjo de un solo uso por clienta para garantizar cero riesgo de hongos o bacterias.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col sm:flex-row items-center md:items-start gap-4">
+                    <div class="w-12 h-12 rounded-2xl bg-rose-900/80 text-rose-300 flex items-center justify-center text-2xl flex-shrink-0">💯</div>
+                    <div>
+                        <h4 class="font-serif text-lg font-bold text-white">Garantía Jennifer Álvarez</h4>
+                        <p class="text-xs text-stone-400 mt-1 leading-relaxed">
+                            Si se te desprende o astilla una uña dentro de los primeros 7 días, el retoque o reparación corre por mi cuenta sin costo alguno.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section id="testimonios" class="py-20 bg-[#FAF6F3]">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6">
+            <div class="text-center max-w-xl mx-auto mb-16">
+                <span class="text-xs font-bold tracking-[0.2em] uppercase text-rose-800">Testimonios Reales</span>
+                <h2 class="font-serif text-3xl sm:text-4xl text-stone-900 font-bold mt-2">Lo que Dicen Quienes ya Confían</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="glass-card p-6 rounded-2xl shadow-sm border border-stone-200">
+                    <div class="flex text-amber-400 text-sm mb-3">★★★★★</div>
+                    <p class="text-stone-700 text-xs sm:text-sm italic leading-relaxed">
+                        "Llevo 6 meses haciéndome las uñas con Jennifer y el cambio es brutal. La manicura rusa dura intacta casi un mes y nunca me lastima las cutículas."
+                    </p>
+                    <div class="mt-4 pt-4 border-t border-stone-200/60 flex items-center gap-3">
+                        <div class="w-8 h-8 rounded-full bg-rose-200 text-rose-800 font-bold text-xs flex items-center justify-center">CP</div>
+                        <div>
+                            <p class="text-xs font-bold text-stone-900">Camila Padrón</p>
+                            <p class="text-[10px] text-stone-500">Clienta Frecuente</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card p-6 rounded-2xl shadow-sm border border-stone-200">
+                    <div class="flex text-amber-400 text-sm mb-3">★★★★★</div>
+                    <p class="text-stone-700 text-xs sm:text-sm italic leading-relaxed">
+                        "La pedicura Jelly Spa es lo mejor que me ha pasado en la semana. Salí como en las nubes y los talones suavecitos. Súper higiénica en todo."
+                    </p>
+                    <div class="mt-4 pt-4 border-t border-stone-200/60 flex items-center gap-3">
+                        <div class="w-8 h-8 rounded-full bg-rose-200 text-rose-800 font-bold text-xs flex items-center justify-center">LG</div>
+                        <div>
+                            <p class="text-xs font-bold text-stone-900">Lorena Gómez</p>
+                            <p class="text-[10px] text-stone-500">Pedicura Spa</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card p-6 rounded-2xl shadow-sm border border-stone-200">
+                    <div class="flex text-amber-400 text-sm mb-3">★★★★★</div>
+                    <p class="text-stone-700 text-xs sm:text-sm italic leading-relaxed">
+                        "Le llevé un diseño de Pinterest súper difícil de mariposas encapsuladas y lo dejó idéntico. Es detallista, puntual y el ambiente del salón es hermoso."
+                    </p>
+                    <div class="mt-4 pt-4 border-t border-stone-200/60 flex items-center gap-3">
+                        <div class="w-8 h-8 rounded-full bg-rose-200 text-rose-800 font-bold text-xs flex items-center justify-center">AR</div>
+                        <div>
+                            <p class="text-xs font-bold text-stone-900">Andreína Rivas</p>
+                            <p class="text-[10px] text-stone-500">Uñas Esculpidas</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-stone-950 text-stone-400 py-12 border-t border-stone-900 text-xs">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
+            <div>
+                <p class="font-serif text-xl font-bold text-white">Jennifer Álvarez</p>
+                <p class="text-stone-500 text-[11px] mt-0.5">Manicura Rusa, Esculpido Prémium & Pedicura Spa Profesional.</p>
+            </div>
+
+            <div class="flex items-center gap-6">
+                <span>📍 Estudio Privado (Atención con Cita Previa)</span>
+                <span>⏰ Lun - Sáb: 9:00 AM - 7:00 PM</span>
+            </div>
+
+            <p class="text-stone-600 text-[11px]">
+                © <span id="currentYear"></span> Jennifer Álvarez. Todos los derechos reservados.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Botón Flotante Permanente de WhatsApp -->
+    <a href="#agendar" class="fixed bottom-6 right-6 z-50 bg-emerald-600 hover:bg-emerald-700 text-white p-3.5 sm:px-5 sm:py-3.5 rounded-full shadow-2xl flex items-center gap-2 transform hover:scale-105 transition group" aria-label="Agendar por WhatsApp">
+        <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.173.086.274.072.376-.043.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.043.072.043.419-.101.824z"/></svg>
+        <span class="hidden sm:inline font-bold text-xs tracking-wide">Agendar Cita</span>
+    </a>
+
+    <!-- Lógica Interactiva en JavaScript -->
+    <script>
+        // Número de WhatsApp de Jennifer (editable en formato internacional)
+        const WHATSAPP_NUMERO = "584120000000"; // Reemplazar con el número real de Jennifer
+
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // 1. Generador de Días (Próximos 7 días)
+        const diasNombres = ['Dom', 'Lun', 'Mar', 'Mié', 'Jue', 'Vie', 'Sáb'];
+        const mesesNombres = ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic'];
+        const diasContainer = document.getElementById('diasContainer');
+        const hoy = new Date();
+
+        for (let i = 0; i < 7; i++) {
+            const fecha = new Date();
+            fecha.setDate(hoy.getDate() + i);
+
+            const diaSemana = diasNombres[fecha.getDay()];
+            const diaNumero = fecha.getDate();
+            const mesTexto = mesesNombres[fecha.getMonth()];
+            const valorFecha = `${diaSemana} ${diaNumero} ${mesTexto}`;
+
+            const boton = document.createElement('button');
+            boton.type = 'button';
+            boton.className = `p-3 rounded-xl border text-center transition flex flex-col items-center justify-center ${i === 0 ? 'border-rose-600 bg-rose-50 text-rose-950 font-bold' : 'border-stone-200 bg-white hover:border-rose-300 text-stone-700'}`;
+            boton.innerHTML = `
+                <span class="text-[10px] uppercase font-bold text-stone-500">${i === 0 ? 'Hoy' : diaSemana}</span>
+                <span class="text-base font-extrabold my-0.5">${diaNumero}</span>
+                <span class="text-[9px] uppercase tracking-wider text-rose-800">${mesTexto}</span>
+            `;
+
+            boton.onclick = () => seleccionarDia(valorFecha, boton);
+            diasContainer.appendChild(boton);
+
+            if (i === 0) {
+                document.getElementById('fechaSeleccionada').value = valorFecha;
+            }
+        }
+
+        function seleccionarDia(fecha, botonActivo) {
+            document.getElementById('fechaSeleccionada').value = fecha;
+            const botones = diasContainer.querySelectorAll('button');
+            botones.forEach(b => {
+                b.className = 'p-3 rounded-xl border text-center transition flex flex-col items-center justify-center border-stone-200 bg-white hover:border-rose-300 text-stone-700';
+            });
+            botonActivo.className = 'p-3 rounded-xl border-2 text-center transition flex flex-col items-center justify-center border-rose-600 bg-rose-50 text-rose-950 font-bold shadow-sm';
+            actualizarHorarios();
+            actualizarResumen();
+        }
+
+        // 2. Horarios y Verificación de Disponibilidad Dinámica
+        const listaHorarios = [
+            { hora: '09:00 AM', estado: 'disponible' },
+            { hora: '10:30 AM', estado: 'disponible' },
+            { hora: '12:00 PM', estado: 'ocupado' },
+            { hora: '02:00 PM', estado: 'disponible' },
+            { hora: '03:30 PM', estado: 'disponible' },
+            { hora: '05:00 PM', estado: 'disponible' },
+            { hora: '06:30 PM', estado: 'ocupado' },
+            { hora: '07:30 PM', estado: 'disponible' }
+        ];
+
+        function actualizarHorarios() {
+            const container = document.getElementById('horariosContainer');
+            container.innerHTML = '';
+
+            listaHorarios.forEach((item, index) => {
+                const btn = document.createElement('button');
+                btn.type = 'button';
+                
+                if (item.estado === 'ocupado') {
+                    btn.disabled = true;
+                    btn.className = 'py-3 px-3 rounded-xl bg-stone-100 border border-stone-200 text-stone-400 text-xs font-medium cursor-not-allowed flex items-center justify-between opacity-60';
+                    btn.innerHTML = `<span>${item.hora}</span> <span class="text-[9px] bg-stone-200 text-stone-500 px-1.5 py-0.5 rounded">Ocupado</span>`;
+                } else {
+                    btn.className = 'py-3 px-3 rounded-xl bg-white border border-stone-300 hover:border-rose-400 text-stone-800 text-xs font-semibold transition flex items-center justify-between group';
+                    btn.innerHTML = `<span>${item.hora}</span> <span class="w-2 h-2 rounded-full bg-emerald-500"></span>`;
+                    btn.onclick = () => seleccionarHora(item.hora, btn);
+                }
+                container.appendChild(btn);
+            });
+        }
+        actualizarHorarios();
+
+        function seleccionarHora(hora, btnActivo) {
+            document.getElementById('horaSeleccionada').value = hora;
+            const botones = document.getElementById('horariosContainer').querySelectorAll('button');
+            botones.forEach(b => {
+                if (!b.disabled) {
+                    b.className = 'py-3 px-3 rounded-xl bg-white border border-stone-300 hover:border-rose-400 text-stone-800 text-xs font-semibold transition flex items-center justify-between';
+                }
+            });
+            btnActivo.className = 'py-3 px-3 rounded-xl border-2 border-rose-600 bg-rose-50 text-rose-950 font-bold text-xs transition flex items-center justify-between shadow-sm';
+            actualizarResumen();
+        }
+
+        // 3. Selección Rápida desde el Catálogo
+        function seleccionarServicio(nombre, precio) {
+            const select = document.getElementById('servicioInput');
+            for (let i = 0; i < select.options.length; i++) {
+                if (select.options[i].text.toLowerCase().includes(nombre.toLowerCase().slice(0, 10))) {
+                    select.selectedIndex = i;
+                    break;
+                }
+            }
+            actualizarServicio();
+            document.getElementById('agendar').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function actualizarServicio() {
+            const servicio = document.getElementById('servicioInput').value;
+            const tag = document.getElementById('servicioSeleccionadoTag');
+            tag.textContent = servicio ? `✓ ${servicio}` : 'Ninguno seleccionado';
+            actualizarResumen();
+        }
+
+        function actualizarResumen() {
+            const servicio = document.getElementById('servicioInput').value;
+            const fecha = document.getElementById('fechaSeleccionada').value;
+            const hora = document.getElementById('horaSeleccionada').value;
+
+            if (servicio && fecha && hora) {
+                document.getElementById('resumenTexto').textContent = `${servicio} • ${fecha} a las ${hora}`;
+                document.getElementById('resumenSubtexto').textContent = 'Listo para confirmar disponibilidad con Jennifer en WhatsApp';
+                document.getElementById('resumenBox').className = 'p-4 rounded-2xl bg-emerald-50 border border-emerald-200 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs';
+            }
+        }
+
+        // 4. Generación y Envío a WhatsApp
+        function enviarReserva(e) {
+            e.preventDefault();
+            const servicio = document.getElementById('servicioInput').value;
+            const fecha = document.getElementById('fechaSeleccionada').value;
+            const hora = document.getElementById('horaSeleccionada').value;
+            const nombre = document.getElementById('nombreInput').value.trim();
+            const telefono = document.getElementById('telefonoInput').value.trim();
+            const notas = document.getElementById('notasInput').value.trim();
+
+            if (!hora) {
+                alert('Por favor selecciona un horario disponible para tu cita.');
+                return;
+            }
+
+            let mensaje = `Hola Jennifer! 💅✨\nQuisiera consultar disponibilidad y agendar una cita contigo:\n\n`;
+            mensaje += `👤 *Clienta:* ${nombre}\n`;
+            mensaje += `📞 *Teléfono:* ${telefono}\n`;
+            mensaje += `💅 *Servicio:* ${servicio}\n`;
+            mensaje += `📅 *Fecha solicitada:* ${fecha}\n`;
+            mensaje += `⏰ *Hora solicitada:* ${hora}\n`;
+            
+            if (notas) {
+                mensaje += `📝 *Detalles/Notas:* ${notas}\n`;
+            }
+            mensaje += `\n¿Tienes este cupo disponible para mí? Quedo atenta, ¡gracias! 🌸`;
+
+            const urlWhatsApp = `https://wa.me/${WHATSAPP_NUMERO}?text=${encodeURIComponent(mensaje)}`;
+            window.open(urlWhatsApp, '_blank');
+        }
+    </script>
+</body>
+</html>
