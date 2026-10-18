@@ -2,12 +2,12 @@
 <html lang="es" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <meta name="google-site-verification" content="DXEvv9uq39d_2C_WRT4Tg33oK5nKKvokw1fsRHloG7k" />
     <title>JeniNails | Uñas & Manicura con Jeni en Barquisimeto Centro</title>
     <meta name="description" content="Estudio de uñas en casa con Jeni en Barquisimeto Centro. Manicura ($6), Pedicura Spa en cualquier color ($6), Nivelación Rubber ($8), Jelly Tip ($9) y Polygel ($11). Atención personalizada 1 a 1. Agenda por WhatsApp al +58 424-5766425.">
-    <meta name="keywords" content="JeniNails, uñas barquisimeto, manicura barquisimeto, pedicura barquisimeto, jelly tip barquisimeto, polygel barquisimeto, nivelacion rubber barquisimeto, ojo de gato uñas, jennifer alvarez">
-    <meta name="author" content="Jennifer Álvarez - JeniNails">
+    <meta name="keywords" content="JeniNails, uñas barquisimeto, manicura barquisimeto, pedicura barquisimeto, jelly tip barquisimeto, polygel barquisimeto, nivelacion rubber barquisimeto, ojo de gato uñas, jennifer alvarez barquisimeto">
+    <meta name="author" content="Jennifer Álvarez - JeniNails Studio">
     <meta name="robots" content="index, follow, max-image-preview:large">
     <link rel="canonical" href="https://jeninails.vercel.app/">
     <meta name="geo.region" content="VE-K">
@@ -30,7 +30,7 @@
     <meta property="og:image:alt" content="💅 JeniNails Studio - Uñas y Manicura en Barquisimeto Centro">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="JeniNails | Uñas con Jeni en Barquisimeto Centro">
-    <meta name="twitter:description" content="Estudio privado en casa: Manicura ($6), Pedicura ($6), Nivelación ($8), Jelly Tip ($9) y Polygel ($11). Atención 1 a 1.">
+    <meta name="twitter:description" content="Estudio privado en casa: Manicura ($6), Pedicura ($6), Nivelación ($8), Jelly Tip ($9) y Polygel ($11). Atención 1 a 1 sin prisas.">
     <meta name="twitter:image" content="https://thenailest.com/cdn/shop/files/WhiteFrenchChrome_7f99a033-2bab-4e3f-8bc7-58414de3c3ab_800x.jpg?v=1767852047">
     
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%23E2C290'/%3E%3Cstop offset='100%25' stop-color='%23C98D93'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='24' fill='%230E0C10' stroke='url(%23g)' stroke-width='4'/%3E%3Ctext x='50%25' y='56%25' dominant-baseline='middle' text-anchor='middle' font-family='serif' font-weight='bold' font-size='42' fill='%23E2C290'%3EJN%3C/text%3E%3C/svg%3E">
@@ -85,72 +85,140 @@
     </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Sacramento&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        dark: { 950: "#07050A", 900: "#0F0B16", 850: "#161120", 800: "#1F182D" },
+                        dark: { 950: "#060409", 900: "#0D0914", 850: "#140F1E", 800: "#1C152B" },
                         champagne: { light: "#FAF4ED", DEFAULT: "#EAD7BF", dark: "#CDB08E" },
                         gold: { DEFAULT: "#D8B478", light: "#EAD1A6", dark: "#B88F48" },
                         rose: { soft: "#E8B8BE", muted: "#C8959C", deep: "#8C1D40" },
-                        cateye: { violet: "#7928CA", magenta: "#FF0080", cyan: "#00F2FE", velvet: "#C98D93" }
+                        cateye: { violet: "#8A2BE2", magenta: "#FF007F", cyan: "#00F2FE", amber: "#FFB300" }
                     },
                     fontFamily: {
                         display: ["Playfair Display", "serif"],
-                        sans: ["Plus Jakarta Sans", "sans-serif"],
-                        hand: ["Sacramento", "cursive"]
+                        sans: ["Plus Jakarta Sans", "sans-serif"]
                     }
                 }
             }
         }
     </script>
     <style>
-        /* 4D Velvet Cat-Eye & Cosmic Galaxy Styling */
+        /* ==============================================================
+           SISTEMA DE FONDO 4D DE ALTA VIBRANCIA: AURORA MESH + CANVAS INTERACTIVO
+           ============================================================== */
+        
+        /* Capa 1: Aurora Mesh Fluida en GPU (Garantiza color y movimiento en cualquier móvil) */
+        .aurora-bg {
+            position: fixed;
+            inset: 0;
+            z-index: 0;
+            overflow: hidden;
+            pointer-events: none;
+            background-color: #060409;
+        }
+
+        .aurora-blob {
+            position: absolute;
+            filter: blur(80px);
+            opacity: 0.45;
+            border-radius: 50%;
+            will-change: transform;
+            animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            animation-iteration-count: infinite;
+        }
+
+        .aurora-1 {
+            width: 450px;
+            height: 450px;
+            background: radial-gradient(circle, #8A2BE2 0%, #4B0082 70%);
+            top: -100px;
+            left: -100px;
+            animation: floatAurora1 18s ease-in-out infinite alternate;
+        }
+
+        .aurora-2 {
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, #FF007F 0%, #8C1D40 70%);
+            top: 30%;
+            right: -150px;
+            animation: floatAurora2 22s ease-in-out infinite alternate;
+        }
+
+        .aurora-3 {
+            width: 550px;
+            height: 550px;
+            background: radial-gradient(circle, #D8B478 0%, #B88F48 70%);
+            bottom: -150px;
+            left: 10%;
+            animation: floatAurora3 20s ease-in-out infinite alternate;
+        }
+
+        .aurora-4 {
+            width: 380px;
+            height: 380px;
+            background: radial-gradient(circle, #00F2FE 0%, #4FACFE 70%);
+            bottom: 40%;
+            left: -100px;
+            opacity: 0.25;
+            animation: floatAurora1 15s ease-in-out infinite alternate-reverse;
+        }
+
+        @keyframes floatAurora1 {
+            0% { transform: translate(0px, 0px) scale(1) rotate(0deg); }
+            50% { transform: translate(120px, 80px) scale(1.15) rotate(45deg); }
+            100% { transform: translate(-60px, 140px) scale(0.95) rotate(-30deg); }
+        }
+
+        @keyframes floatAurora2 {
+            0% { transform: translate(0px, 0px) scale(1); }
+            50% { transform: translate(-140px, -90px) scale(1.2); }
+            100% { transform: translate(80px, 110px) scale(0.9); }
+        }
+
+        @keyframes floatAurora3 {
+            0% { transform: translate(0px, 0px) scale(1); }
+            50% { transform: translate(100px, -120px) scale(1.1); }
+            100% { transform: translate(-110px, 50px) scale(0.95); }
+        }
+
+        /* Capa 2: Canvas de Rayo Magnético Ojo de Gato & Micro-Glitter 60FPS */
         #catEyeCanvas {
             position: fixed;
-            top: 0;
-            left: 0;
+            inset: 0;
             width: 100vw;
             height: 100vh;
             pointer-events: none;
-            z-index: 0;
-            opacity: 0.85;
+            z-index: 1;
             mix-blend-mode: screen;
+            opacity: 0.9;
         }
 
-        .bg-luxury-deep {
-            background-color: #07050A;
-            background-image: 
-                radial-gradient(circle at 50% 15%, rgba(121, 40, 202, 0.18) 0%, transparent 60%),
-                radial-gradient(circle at 85% 65%, rgba(255, 0, 128, 0.12) 0%, transparent 50%),
-                radial-gradient(circle at 15% 85%, rgba(216, 180, 120, 0.12) 0%, transparent 55%),
-                radial-gradient(circle at 50% 50%, rgba(15, 11, 22, 0.95) 0%, #07050A 100%);
-            background-attachment: fixed;
-        }
-
+        /* Paneles de Cristal Líquido (Glassmorphism de Agencia $1500) */
         .glass-panel {
-            background: rgba(18, 14, 26, 0.72);
+            background: rgba(18, 14, 26, 0.75);
             backdrop-filter: blur(20px);
             -webkit-backdrop-filter: blur(20px);
-            border: 1px solid rgba(234, 215, 191, 0.14);
-            box-shadow: 0 20px 50px -15px rgba(0, 0, 0, 0.7), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(234, 215, 191, 0.16);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.75), inset 0 1px 0 rgba(255, 255, 255, 0.1);
         }
 
         .glass-card {
-            background: rgba(22, 17, 32, 0.65);
-            backdrop-filter: blur(14px);
-            -webkit-backdrop-filter: blur(14px);
-            border: 1px solid rgba(234, 215, 191, 0.12);
-            transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+            background: rgba(20, 15, 29, 0.68);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(234, 215, 191, 0.14);
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
         }
 
         .glass-card:hover {
-            border-color: rgba(234, 215, 191, 0.45);
-            transform: translateY(-4px) scale(1.01);
-            box-shadow: 0 20px 40px -12px rgba(216, 180, 120, 0.25), 0 0 25px -5px rgba(255, 0, 128, 0.2);
+            border-color: rgba(216, 180, 120, 0.5);
+            transform: translateY(-4px);
+            box-shadow: 0 20px 40px -10px rgba(216, 180, 120, 0.25), 0 0 25px -5px rgba(255, 0, 127, 0.25);
         }
 
         .luxury-gradient-text {
@@ -160,39 +228,15 @@
         }
 
         .badge-luxury {
-            background: rgba(234, 215, 191, 0.08);
-            border: 1px solid rgba(234, 215, 191, 0.25);
+            background: rgba(234, 215, 191, 0.09);
+            border: 1px solid rgba(234, 215, 191, 0.28);
             color: #EAD7BF;
             backdrop-filter: blur(8px);
         }
 
-        /* 4D Velvet Magnetic Shimmer Animation */
-        @keyframes velvetShift {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
-        }
-
-        .velvet-aurora {
-            background: linear-gradient(125deg, rgba(121, 40, 202, 0.35), rgba(255, 0, 128, 0.25), rgba(216, 180, 120, 0.3), rgba(0, 242, 254, 0.2), rgba(121, 40, 202, 0.35));
-            background-size: 300% 300%;
-            animation: velvetShift 12s ease infinite;
-        }
-
-        .shimmer-badge {
-            background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.25) 50%, rgba(255,255,255,0) 100%);
-            background-size: 200% 100%;
-            animation: shimmerSlide 3.5s infinite;
-        }
-
-        @keyframes shimmerSlide {
-            0% { background-position: -200% 0; }
-            100% { background-position: 200% 0; }
-        }
-
-        /* Floating nail sticker badges */
+        /* Stickers y Micro-animaciones */
         @keyframes floatSlow1 {
-            0%, 100% { transform: translateY(0px) rotate(-1deg); }
+            0%, 100% { transform: translateY(0px) rotate(-1.5deg); }
             50% { transform: translateY(-7px) rotate(2deg); }
         }
         @keyframes floatSlow2 {
@@ -200,54 +244,71 @@
             50% { transform: translateY(-9px) rotate(-2deg); }
         }
         @keyframes pulseGlow {
-            0%, 100% { box-shadow: 0 0 15px rgba(216, 180, 120, 0.25); }
-            50% { box-shadow: 0 0 30px rgba(255, 0, 128, 0.4), 0 0 15px rgba(216, 180, 120, 0.5); }
+            0%, 100% { box-shadow: 0 0 20px rgba(216, 180, 120, 0.25); }
+            50% { box-shadow: 0 0 35px rgba(255, 0, 127, 0.4), 0 0 20px rgba(216, 180, 120, 0.6); }
         }
 
         .nail-sticker-1 { animation: floatSlow1 4.5s ease-in-out infinite; }
         .nail-sticker-2 { animation: floatSlow2 5.2s ease-in-out infinite; }
         .nail-glow-card { animation: pulseGlow 4s ease-in-out infinite; }
 
-        /* Custom scrollbar */
-        ::-webkit-scrollbar { width: 7px; }
-        ::-webkit-scrollbar-track { background: #07050A; }
-        ::-webkit-scrollbar-thumb { background: #2A213A; border-radius: 4px; }
+        /* Toast animado al seleccionar diseño */
+        #selectionToast {
+            transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        /* Respeto al Safe Area de teléfonos modernos */
+        .safe-bottom {
+            padding-bottom: max(0.75rem, env(safe-area-inset-bottom));
+        }
+
+        /* Scrollbar suave */
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: #060409; }
+        ::-webkit-scrollbar-thumb { background: #261D33; border-radius: 4px; }
         ::-webkit-scrollbar-thumb:hover { background: #D8B478; }
     </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 </head>
-<body class="bg-luxury-deep text-stone-100 font-sans antialiased selection:bg-gold selection:text-dark-950 min-h-screen pb-20 md:pb-0 relative overflow-x-hidden">
+<body class="text-stone-100 font-sans antialiased selection:bg-gold selection:text-dark-950 min-h-screen pb-24 md:pb-0 relative overflow-x-hidden">
 
-    <!-- Canvas para el Efecto 4D Ojo de Gato Uñas & Galaxia Cósmica Interactiva -->
+    <!-- MOTOR 4D VISUAL: CAPA 1 AURORA MESH (GPU) + CAPA 2 CANVAS CAT-EYE -->
+    <div class="aurora-bg">
+        <div class="aurora-blob aurora-1"></div>
+        <div class="aurora-blob aurora-2"></div>
+        <div class="aurora-blob aurora-3"></div>
+        <div class="aurora-blob aurora-4"></div>
+    </div>
     <canvas id="catEyeCanvas"></canvas>
 
-    <!-- Barra de Notificación Superior -->
-    <div class="relative z-20 bg-dark-900/90 backdrop-blur-md border-b border-champagne/15 text-stone-300 text-[11px] sm:text-xs py-2 px-4 text-center tracking-wider flex items-center justify-center gap-2">
-        <span class="inline-block w-2 h-2 rounded-full bg-gold animate-pulse"></span>
-        <span>Estudio Privado en Casa • Barquisimeto Centro • Atención 1 a 1 sin prisas</span>
+    <!-- NOTIFICACIÓN SUPERIOR DE ESTADO -->
+    <div class="relative z-20 bg-dark-950/85 backdrop-blur-md border-b border-champagne/15 text-stone-300 text-[11px] sm:text-xs py-2 px-4 text-center tracking-wider flex items-center justify-center gap-2">
+        <span class="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+        <span class="font-medium text-white">Estudio en Casa • Barquisimeto Centro</span>
+        <span class="text-champagne/40">•</span>
+        <span class="text-champagne">Atención 1 a 1 sin prisas</span>
         <span class="hidden sm:inline text-champagne/40">|</span>
-        <span class="hidden sm:inline text-gold">💅 Citas directas por WhatsApp</span>
+        <span class="hidden sm:inline text-gold font-bold">💅 Previa Cita por WhatsApp</span>
     </div>
 
-    <!-- Navegación de Lujo 2026 -->
-    <header class="sticky top-0 z-40 bg-dark-950/85 backdrop-blur-xl border-b border-champagne/10 transition-all">
+    <!-- CABECERA DE LUJO -->
+    <header class="sticky top-0 z-40 bg-dark-950/90 backdrop-blur-xl border-b border-champagne/15 transition-all">
         <div class="max-w-5xl mx-auto px-4 sm:px-6 h-20 flex items-center justify-between">
             <a href="#" class="flex items-center gap-3 group">
                 <div class="relative">
-                    <img src="jeni-avatar.svg" onerror="this.onerror=null; this.src='https://lh3.googleusercontent.com/d/1oozpKgmkCNvNud0hyYZq4tLm01SmMPrz=w200';" alt="Jeni Avatar" class="w-12 h-12 rounded-full object-cover border-2 border-gold/60 shadow-lg group-hover:scale-105 transition">
-                    <!-- Nail Art mini badge decorativo -->
-                    <span class="absolute -bottom-1 -right-1 w-5 h-5 rounded-full bg-dark-950 border border-gold flex items-center justify-center text-[11px] shadow" title="Nail Tech Pro">💅</span>
+                    <img src="jeni-avatar.svg" onerror="this.onerror=null; this.src='https://lh3.googleusercontent.com/d/1oozpKgmkCNvNud0hyYZq4tLm01SmMPrz=w200';" alt="Jeni Avatar" class="w-12 h-12 rounded-full object-cover border-2 border-gold/70 shadow-lg group-hover:scale-105 transition">
+                    <span class="absolute -bottom-1 -right-1 w-5 h-5 rounded-full bg-dark-950 border border-gold flex items-center justify-center text-[10px] shadow" title="Nail Tech Certificada">💅</span>
                 </div>
                 <div>
                     <div class="flex items-center gap-1.5">
                         <span class="font-display text-xl sm:text-2xl font-bold tracking-tight text-white block leading-tight">JeniNails</span>
                         <span class="text-xs text-gold">✨</span>
                     </div>
-                    <span class="text-[9px] tracking-[0.25em] uppercase text-champagne/80 font-medium block">Jennifer Álvarez</span>
+                    <span class="text-[9px] tracking-[0.25em] uppercase text-champagne/90 font-medium block">Jennifer Álvarez</span>
                 </div>
             </a>
             
-            <nav class="hidden md:flex items-center gap-8 text-xs uppercase tracking-widest font-semibold text-stone-300">
+            <nav class="hidden md:flex items-center gap-7 text-xs uppercase tracking-widest font-semibold text-stone-300">
                 <a href="#servicios" class="hover:text-champagne transition">Servicios</a>
                 <a href="#galeria" class="hover:text-champagne transition">Fotos Reales</a>
                 <a href="#sobre-jeni" class="hover:text-champagne transition">Sobre Jeni</a>
@@ -264,12 +325,12 @@
         </div>
     </header>
 
-    <!-- HERO SECTION: Portada con Efecto 4D, stickers de uñas y diseño de alta gama -->
+    <!-- HERO SECTION: PORTADA DE AUTOR -->
     <section class="relative z-10 pt-10 pb-16 md:pt-16 md:pb-24 overflow-hidden">
         <div class="max-w-5xl mx-auto px-4 sm:px-6">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
                 
-                <!-- Columna Texto: Propuesta de Valor Real & Personal -->
+                <!-- Columna Texto: Propuesta de Valor Clara y Transparente -->
                 <div class="lg:col-span-7 space-y-5 text-center lg:text-left">
                     <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full badge-luxury text-xs font-semibold uppercase tracking-wider">
                         <span class="w-2 h-2 rounded-full bg-gold animate-ping"></span>
@@ -304,18 +365,16 @@
                     </div>
                 </div>
 
-                <!-- Columna Portada Pequeña DECORADA CON DETALLES DE UÑAS & EFECTO 4D -->
+                <!-- Columna Portada Pequeña DECORADA CON ELEMENTOS DE UÑAS & STICKERS -->
                 <div class="lg:col-span-5 relative">
-                    
-                    <!-- Contenedor con marco holográfico y stickers de uñas -->
                     <div class="relative mx-auto max-w-xs sm:max-w-sm rounded-3xl p-2.5 bg-gradient-to-b from-champagne/35 via-gold/20 to-transparent shadow-2xl nail-glow-card">
                         
-                        <!-- STICKERS Y DETALLES DE UÑAS FLOTANTES (Portada Pequeña Decorada) -->
+                        <!-- STICKERS FLOTANTES -->
                         <div class="absolute -top-4 -left-4 z-30 nail-sticker-1">
                             <div class="glass-panel px-3 py-1.5 rounded-full border border-gold/60 shadow-xl flex items-center gap-1.5 text-xs font-bold text-white bg-dark-900/95">
                                 <span>💅</span>
                                 <span class="text-gold">Cat Eye Velvet</span>
-                                <span class="text-[10px] bg-rose-deep/70 px-1.5 py-0.5 rounded text-white font-extrabold">2026</span>
+                                <span class="text-[10px] bg-rose-deep/80 px-1.5 py-0.5 rounded text-white font-extrabold">2026</span>
                             </div>
                         </div>
 
@@ -335,17 +394,15 @@
                             </div>
                         </div>
 
-                        <!-- Tarjeta Principal de la Portada -->
+                        <!-- Tarjeta de la Portada -->
                         <div class="rounded-2xl overflow-hidden bg-dark-900 relative group">
                             <img src="https://lh3.googleusercontent.com/d/16WZC8QJys4Kt2C_NMGqizk5Dra0Hx_C7=w1000" onerror="this.onerror=null; this.src='https://drive.google.com/thumbnail?id=16WZC8QJys4Kt2C_NMGqizk5Dra0Hx_C7&sz=w1000';" alt="Uñas hechas por Jeni en Barquisimeto" class="w-full h-[420px] object-cover object-center group-hover:scale-105 transition duration-500">
                             
-                            <!-- Insignia de Trabajo Real -->
                             <div class="absolute top-3 left-3 badge-luxury text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full shadow flex items-center gap-1.5">
                                 <span class="w-1.5 h-1.5 rounded-full bg-gold animate-pulse"></span>
                                 <span>✦ Trabajo Real de Jeni</span>
                             </div>
 
-                            <!-- Sticker Decorativo Esquina Superior Derecha -->
                             <div class="absolute top-3 right-3 bg-dark-950/80 backdrop-blur-md px-2 py-1 rounded-lg border border-gold/40 text-[10px] font-bold text-gold flex items-center gap-1">
                                 <span>💎</span>
                                 <span>Soft Gel & Rubber</span>
@@ -358,7 +415,7 @@
                                 </div>
                                 <h2 class="font-display text-xl font-bold text-white">Micro-French & Brillo Perla</h2>
                                 <p class="text-xs text-stone-300 mt-0.5 mb-3">Línea delgada, cutícula sellada con técnica rusa y cero grosor exagerado.</p>
-                                <button onclick="prepararReserva('Nivelación con Base Rubber ($8)', 'Micro-French / Brillo Perla de Portada')" class="w-full py-2.5 px-3 rounded-lg bg-gradient-to-r from-gold via-champagne to-gold hover:brightness-105 text-dark-950 font-bold text-xs uppercase tracking-wider shadow flex items-center justify-center gap-1.5 transition active:scale-95">
+                                <button onclick="seleccionarModelo('Micro-French & Brillo Perla', 'Nivelación con Base Rubber ($8)', '8')" class="w-full py-2.5 px-3 rounded-lg bg-gradient-to-r from-gold via-champagne to-gold hover:brightness-105 text-dark-950 font-bold text-xs uppercase tracking-wider shadow flex items-center justify-center gap-1.5 transition active:scale-95">
                                     <span>Pedir Cita con este Modelo</span>
                                     <span>→</span>
                                 </button>
@@ -371,15 +428,15 @@
         </div>
     </section>
 
-    <!-- SECCIÓN DE LOS 5 SERVICIOS EXACTOS DEL FLYER DE WHATSAPP -->
+    <!-- SECCIÓN DE LOS 5 SERVICIOS EXACTOS DEL FLYER -->
     <section id="servicios" class="py-16 bg-dark-900/60 border-t border-champagne/10 relative z-10">
         <div class="max-w-5xl mx-auto px-4 sm:px-6">
             <div class="text-center max-w-xl mx-auto mb-12">
                 <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full badge-luxury text-[10px] font-bold uppercase tracking-wider mb-2.5">
-                    <span>💅 Lista Oficial de Precios 2026</span>
+                    <span>💅 Lista Oficial de Precios</span>
                 </div>
-                <h2 class="font-display text-3xl sm:text-4xl font-bold text-white">Servicios & Tarifas Justas</h2>
-                <p class="text-stone-300 text-xs sm:text-sm mt-2">Los 5 servicios que ofrezco en mi estudio en casa. Sin cargos ocultos ni letras pequeñas.</p>
+                <h2 class="font-display text-3xl sm:text-4xl font-bold text-white">Servicios & Tarifas Claras</h2>
+                <p class="text-stone-300 text-xs sm:text-sm mt-2">Los 5 servicios que ofrezco en mi estudio en casa. Sin cargos ocultos ni sorpresas.</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
@@ -399,7 +456,7 @@
                             <span class="text-emerald-400">Dura 15-21 días</span>
                         </div>
                     </div>
-                    <button onclick="prepararReserva('Manicura Semipermanente ($6)', 'Servicio de Manicura')" class="mt-5 w-full py-2 px-3 rounded-lg bg-dark-800 hover:bg-gold hover:text-dark-950 text-stone-200 border border-champagne/20 font-bold text-xs transition">
+                    <button onclick="seleccionarServicioDirecto('Manicura Semipermanente ($6)', '6')" class="mt-5 w-full py-2.5 px-3 rounded-lg bg-dark-800 hover:bg-gold hover:text-dark-950 text-stone-200 border border-champagne/20 font-bold text-xs transition">
                         Elegir Manicura ($6)
                     </button>
                 </div>
@@ -422,7 +479,7 @@
                             <span class="text-emerald-400">Pies suaves y limpios</span>
                         </div>
                     </div>
-                    <button onclick="prepararReserva('Pedicura Spa en Cualquier Color ($6)', 'Servicio de Pedicura')" class="mt-5 w-full py-2 px-3 rounded-lg bg-dark-800 hover:bg-gold hover:text-dark-950 text-stone-200 border border-champagne/20 font-bold text-xs transition">
+                    <button onclick="seleccionarServicioDirecto('Pedicura Spa en Cualquier Color ($6)', '6')" class="mt-5 w-full py-2.5 px-3 rounded-lg bg-dark-800 hover:bg-gold hover:text-dark-950 text-stone-200 border border-champagne/20 font-bold text-xs transition">
                         Elegir Pedicura Spa ($6)
                     </button>
                 </div>
@@ -442,7 +499,7 @@
                             <span class="text-emerald-400">Dura 21 a 28 días</span>
                         </div>
                     </div>
-                    <button onclick="prepararReserva('Nivelación con Base Rubber ($8)', 'Servicio de Nivelación')" class="mt-5 w-full py-2 px-3 rounded-lg bg-dark-800 hover:bg-gold hover:text-dark-950 text-stone-200 border border-champagne/20 font-bold text-xs transition">
+                    <button onclick="seleccionarServicioDirecto('Nivelación con Base Rubber ($8)', '8')" class="mt-5 w-full py-2.5 px-3 rounded-lg bg-dark-800 hover:bg-gold hover:text-dark-950 text-stone-200 border border-champagne/20 font-bold text-xs transition">
                         Elegir Nivelación ($8)
                     </button>
                 </div>
@@ -462,7 +519,7 @@
                             <span class="text-emerald-400">Largo y forma deseada</span>
                         </div>
                     </div>
-                    <button onclick="prepararReserva('Jelly Tip (Soft Gel) ($9)', 'Servicio de Jelly Tip')" class="mt-5 w-full py-2 px-3 rounded-lg bg-dark-800 hover:bg-gold hover:text-dark-950 text-stone-200 border border-champagne/20 font-bold text-xs transition">
+                    <button onclick="seleccionarServicioDirecto('Jelly Tip (Soft Gel) ($9)', '9')" class="mt-5 w-full py-2.5 px-3 rounded-lg bg-dark-800 hover:bg-gold hover:text-dark-950 text-stone-200 border border-champagne/20 font-bold text-xs transition">
                         Elegir Jelly Tip ($9)
                     </button>
                 </div>
@@ -482,7 +539,7 @@
                             <span class="text-emerald-400">Máxima resistencia</span>
                         </div>
                     </div>
-                    <button onclick="prepararReserva('Polygel Esculpido o Tips ($11)', 'Servicio de Polygel')" class="mt-5 w-full py-2 px-3 rounded-lg bg-dark-800 hover:bg-gold hover:text-dark-950 text-stone-200 border border-champagne/20 font-bold text-xs transition">
+                    <button onclick="seleccionarServicioDirecto('Polygel Esculpido o Tips ($11)', '11')" class="mt-5 w-full py-2.5 px-3 rounded-lg bg-dark-800 hover:bg-gold hover:text-dark-950 text-stone-200 border border-champagne/20 font-bold text-xs transition">
                         Elegir Polygel ($11)
                     </button>
                 </div>
@@ -505,7 +562,7 @@
                             <span class="text-emerald-400">Sesión integral 1 a 1</span>
                         </div>
                     </div>
-                    <button onclick="prepararReserva('Combo Dúo Manos + Pies ($11)', 'Combo Manos + Pies')" class="mt-5 w-full py-2 px-3 rounded-lg bg-gradient-to-r from-gold via-champagne to-gold hover:brightness-105 text-dark-950 font-bold text-xs transition">
+                    <button onclick="seleccionarServicioDirecto('Combo Dúo Manos + Pies ($11)', '11')" class="mt-5 w-full py-2.5 px-3 rounded-lg bg-gradient-to-r from-gold via-champagne to-gold hover:brightness-105 text-dark-950 font-bold text-xs transition">
                         Elegir Combo Completo ($11)
                     </button>
                 </div>
@@ -514,30 +571,39 @@
         </div>
     </section>
 
-    <!-- GALERÍA DE 16 FOTOS REALES (Directas desde Google Drive) -->
+    <!-- GALERÍA DE 16 FOTOS REALES VERIFICADAS (Sin fotos incoherentes) -->
     <section id="galeria" class="py-16 bg-dark-950/80 border-t border-champagne/10 relative z-10">
         <div class="max-w-5xl mx-auto px-4 sm:px-6">
             <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-10 gap-4">
                 <div>
                     <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full badge-luxury text-[10px] font-bold uppercase tracking-wider mb-2">
-                        <span>📷 Evidencia Visual</span>
+                        <span>📷 Portafolio Real</span>
                     </div>
-                    <h2 class="font-display text-3xl sm:text-4xl font-bold text-white">16 Fotos Reales de Clientes</h2>
-                    <p class="text-stone-300 text-xs mt-1">Cero fotos falsas de internet. Cada modelo fue realizado por Jeni en Barquisimeto.</p>
+                    <h2 class="font-display text-3xl sm:text-4xl font-bold text-white">Fotos de Clientes Atendidas</h2>
+                    <p class="text-stone-300 text-xs mt-1">Todas son fotos tomadas en mi mesa de trabajo con luz real. Toca cualquier modelo para reservarlo.</p>
                 </div>
 
                 <!-- Filtros rápidos de galería -->
                 <div class="flex flex-wrap gap-2 text-xs">
                     <button onclick="filtrarGaleria('todos')" class="filter-btn active px-3 py-1.5 rounded-lg bg-gold text-dark-950 font-bold transition">Todos (16)</button>
-                    <button onclick="filtrarGaleria('rubber')" class="filter-btn px-3 py-1.5 rounded-lg bg-dark-850 text-stone-300 border border-champagne/15 hover:border-gold transition">Rubber / Manicura</button>
-                    <button onclick="filtrarGaleria('extensiones')" class="filter-btn px-3 py-1.5 rounded-lg bg-dark-850 text-stone-300 border border-champagne/15 hover:border-gold transition">Jelly & Polygel</button>
-                    <button onclick="filtrarGaleria('pedicura')" class="filter-btn px-3 py-1.5 rounded-lg bg-dark-850 text-stone-300 border border-champagne/15 hover:border-gold transition">Pies</button>
+                    <button onclick="filtrarGaleria('rubber')" class="filter-btn px-3 py-1.5 rounded-lg bg-dark-850 text-stone-300 border border-champagne/15 hover:border-gold transition">Nivelación Rubber</button>
+                    <button onclick="filtrarGaleria('extensiones')" class="filter-btn px-3 py-1.5 rounded-lg bg-dark-850 text-stone-300 border border-champagne/15 hover:border-gold transition">Jelly Tip & Polygel</button>
+                    <button onclick="filtrarGaleria('nailart')" class="filter-btn px-3 py-1.5 rounded-lg bg-dark-850 text-stone-300 border border-champagne/15 hover:border-gold transition">Nail Art & Diseños</button>
                 </div>
+            </div>
+
+            <!-- Toast de confirmación al hacer click -->
+            <div id="selectionToast" class="hidden mb-6 p-4 rounded-xl bg-gold/15 border border-gold/40 text-gold text-xs flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                    <span class="text-base">💅</span>
+                    <span>Diseño seleccionado: <strong id="toastDesignName" class="text-white"></strong>. Te llevamos al formulario...</span>
+                </div>
+                <span class="text-[11px] font-bold underline cursor-pointer" onclick="document.getElementById('selectionToast').classList.add('hidden')">Cerrar</span>
             </div>
 
             <!-- Grid de Fotos con Lazy Loading y Fallback Automático -->
             <div id="galeriaGrid" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
-                <!-- Se inyecta dinámicamente con JavaScript -->
+                <!-- Se inyecta dinámicamente con JavaScript con nombres y servicios 100% precisos -->
             </div>
         </div>
     </section>
@@ -624,7 +690,7 @@
                     <span>📅 Reserva en 1 Toque</span>
                 </div>
                 <h2 class="font-display text-3xl font-bold text-white">Aparta tu Cita con Jeni</h2>
-                <p class="text-stone-300 text-xs mt-1">Selecciona tu servicio y calcula el total antes de enviar tu mensaje a WhatsApp.</p>
+                <p class="text-stone-300 text-xs mt-1">Completa los datos y se enviará directo a mi WhatsApp para coordinar.</p>
             </div>
 
             <div class="glass-panel rounded-3xl p-6 sm:p-8 border border-champagne/20 shadow-2xl">
@@ -636,7 +702,7 @@
                     </div>
 
                     <div>
-                        <label class="block text-xs font-semibold text-stone-300 mb-1">Servicio Principal:</label>
+                        <label class="block text-xs font-semibold text-stone-300 mb-1">Servicio que deseas:</label>
                         <select id="servicioSelect" onchange="calcularTotal()" class="w-full bg-dark-850 border border-champagne/20 rounded-xl px-4 py-2.5 text-xs text-white focus:outline-none focus:border-gold">
                             <option value="6" data-name="Manicura Semipermanente">Manicura Semipermanente — $6</option>
                             <option value="6" data-name="Pedicura Spa en Cualquier Color">Pedicura Spa en Cualquier Color — $6</option>
@@ -645,6 +711,11 @@
                             <option value="11" data-name="Polygel Esculpido o Tips">Polygel Esculpido o Tips — $11</option>
                             <option value="11" data-name="Combo Dúo Manos + Pies">Combo Dúo Manos + Pies Semipermanente — $11</option>
                         </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-semibold text-stone-300 mb-1">Diseño o idea que tienes en mente:</label>
+                        <input type="text" id="disenoIdea" placeholder="Ej: Francesa fina, color vino, brillo perla, o foto de referencia" class="w-full bg-dark-850 border border-champagne/20 rounded-xl px-4 py-2.5 text-xs text-white placeholder-stone-500 focus:outline-none focus:border-gold">
                     </div>
 
                     <!-- Extras opcionales -->
@@ -661,7 +732,7 @@
                             </label>
                             <label class="flex items-center gap-2 p-2 rounded-lg bg-dark-850 border border-champagne/15 cursor-pointer">
                                 <input type="checkbox" id="extraRetiro" value="2" onchange="calcularTotal()" class="rounded accent-gold">
-                                <span class="text-stone-300">Retiro de Sistema Previo (+$2)</span>
+                                <span class="text-stone-300">Retiro Previo (+$2)</span>
                             </label>
                             <label class="flex items-center gap-2 p-2 rounded-lg bg-dark-850 border border-champagne/15 cursor-pointer">
                                 <input type="checkbox" id="extraCristales" value="1" onchange="calcularTotal()" class="rounded accent-gold">
@@ -672,17 +743,15 @@
 
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1">
                         <div>
-                            <label class="block text-xs font-semibold text-stone-300 mb-1">Día Preferido:</label>
+                            <label class="block text-xs font-semibold text-stone-300 mb-1">Día de preferencia:</label>
                             <input type="date" id="fechaCita" required class="w-full bg-dark-850 border border-champagne/20 rounded-xl px-4 py-2 text-xs text-white focus:outline-none focus:border-gold">
                         </div>
                         <div>
-                            <label class="block text-xs font-semibold text-stone-300 mb-1">Hora Deseada:</label>
+                            <label class="block text-xs font-semibold text-stone-300 mb-1">Turno deseado:</label>
                             <select id="horaCita" class="w-full bg-dark-850 border border-champagne/20 rounded-xl px-4 py-2 text-xs text-white focus:outline-none focus:border-gold">
-                                <option value="9:00 AM">9:00 AM</option>
-                                <option value="11:00 AM">11:00 AM</option>
-                                <option value="2:00 PM">2:00 PM</option>
-                                <option value="4:00 PM">4:00 PM</option>
-                                <option value="Otra hora por convenir">Otra hora a coordinar</option>
+                                <option value="Mañana (9:00 AM - 1:00 PM)">Mañana (9:00 AM - 1:00 PM)</option>
+                                <option value="Tarde (2:00 PM - 6:00 PM)">Tarde (2:00 PM - 6:00 PM)</option>
+                                <option value="Hora específica por convenir">Hora específica a convenir</option>
                             </select>
                         </div>
                     </div>
@@ -695,7 +764,7 @@
                         </div>
                         <div class="text-right text-[11px] text-stone-400">
                             <div>Sin seña obligatoria</div>
-                            <div class="text-emerald-400 font-semibold">Pagas al terminar</div>
+                            <div class="text-emerald-400 font-semibold">Pagas al terminar tu cita</div>
                         </div>
                     </div>
 
@@ -768,40 +837,43 @@
         </div>
     </footer>
 
-    <!-- BARRA FLOTANTE MÓVIL FIJA -->
-    <div class="md:hidden fixed bottom-0 inset-x-0 z-50 bg-dark-950/95 backdrop-blur-xl border-t border-champagne/20 p-3 flex items-center justify-between gap-3">
+    <!-- BARRA FLOTANTE MÓVIL ERGONÓMICA CON SAFE AREA -->
+    <div class="md:hidden fixed bottom-0 inset-x-0 z-50 bg-dark-950/95 backdrop-blur-xl border-t border-champagne/20 px-4 py-3 safe-bottom flex items-center justify-between gap-3 shadow-2xl">
         <div>
-            <div class="text-[10px] text-stone-400">JeniNails • Estudio en Casa</div>
-            <div class="text-xs font-bold text-gold">Citas desde $6</div>
+            <div class="flex items-center gap-1.5">
+                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                <span class="text-[10px] text-stone-300 font-semibold">Cupos Disponibles</span>
+            </div>
+            <div class="text-xs font-bold text-gold">Citas desde $6 en Barquisimeto</div>
         </div>
         <a href="#agendar" class="bg-gradient-to-r from-gold via-champagne to-gold text-dark-950 text-xs font-bold py-2.5 px-4 rounded-xl shadow flex items-center gap-1.5 active:scale-95 transition">
             <span>Pedir Cita WhatsApp</span>
         </a>
     </div>
 
-    <!-- JAVASCRIPT: Efecto 4D Ojo de Gato, Galería 16 Fotos, QR Code y WhatsApp Link -->
+    <!-- JAVASCRIPT: MOTOR 4D INTERACTIVO, GALERÍA VERIFICADA & RESERVAS -->
     <script>
-        // DATOS DE LAS 16 FOTOS REALES DE GOOGLE DRIVE
+        // DATOS DE LAS 16 FOTOS REALES EXACTAMENTE IDENTIFICADAS CON EL VÍDEO
         const fotosReales = [
-            { id: "16WZC8QJys4Kt2C_NMGqizk5Dra0Hx_C7", title: "Micro-French & Brillo Perla", cat: "rubber", desc: "Cutícula sellada y brillo espejo" },
-            { id: "1IHKec73cHVDag6k9oF1dpi9NbN5D9TWM", title: "Jelly Tip Estilo Coquette", cat: "extensiones", desc: "Acabado cristalino y fino" },
-            { id: "1TnaCOzSME_gB--tI-BT6JWeQFt_X_qLL", title: "Efecto Ojo de Gato Terciopelo", cat: "rubber", desc: "Brillo magnético multidimensional" },
-            { id: "1oozpKgmkCNvNud0hyYZq4tLm01SmMPrz", title: "Nivelación Rubber Nude", cat: "rubber", desc: "Fortalecimiento natural 21+ días" },
-            { id: "1Zx-otJUYh_L76IrYc_lc9XREpF9KST5f", title: "Pedicura Spa Blanco Lechoso", cat: "pedicura", desc: "Pies impecables y relajados" },
-            { id: "1bNc7Q2XnFFIqq8a0DFThRn3IifK_lZmK", title: "Pedicura Francesa Clásica", cat: "pedicura", desc: "Línea fina y esmaltado duradero" },
-            { id: "1Q5vyhKGXhQv8xHmYlVH4tHUg_cNbi5CW", title: "Polygel Esculpido Rosa", cat: "extensiones", desc: "Estructura resistente sin peso" },
-            { id: "1P5ZMeNmExLewJvmbASlAB9GFYzci-ke8", title: "Baby Boomer Milky", cat: "extensiones", desc: "Difuminado suave de alta gama" },
-            { id: "19yP9A2L-ujBNswzD6fDce_k9AgrG2VRW", title: "Manicura Rusa Semipermanente", cat: "rubber", desc: "Sellado perfecto de cutícula" },
-            { id: "1Py-z-G8t4kLOptk6Zx5RCQ6eiBTpynio", title: "Jelly Tip Almendra", cat: "extensiones", desc: "Forma estilizada y ligera" },
-            { id: "1uCqF1-hE53SDuSPXSoOu2eFN1aSZlw0w", title: "Efecto Perla Glazed", cat: "rubber", desc: "Reflejo nacarado sutil" },
-            { id: "1WrINhasN9kwRyE8VePvPnS7UAecQtXba", title: "Diseño con Cristales", cat: "extensiones", desc: "Detalles finos y elegantes" },
-            { id: "1lJK2GRViGistev73vYYaTgbi9xN5gYz8", title: "Pedicura Spa Vino Tinto", cat: "pedicura", desc: "Cualquier color a tu elección" },
-            { id: "1babJmUwxpVGhFQYRtdkRLpfbQHmVWxdD", title: "Nivelación con Francesa Blanca", cat: "rubber", desc: "Clásico infalible para oficina" },
-            { id: "1T_cEmYvj-Eb6LWPj9MKC5835sL_g1teg", title: "Polygel Nude con Destellos", cat: "extensiones", desc: "Brillo delicado para evento" },
-            { id: "1TLPPGrkJ1U8VnD3JUXegsO-u6GT4PYY4", title: "Efecto Ojo de Gato Galáctico", cat: "rubber", desc: "Línea magnética 4D móvil" }
+            { id: "16WZC8QJys4Kt2C_NMGqizk5Dra0Hx_C7", title: "Micro-French & Brillo Perla", cat: "rubber", tag: "Nivelación", precio: "$8", val: "8", serv: "Nivelación con Base Rubber" },
+            { id: "1P5ZMeNmExLewJvmbASlAB9GFYzci-ke8", title: "Baby Boomer Milky Suave", cat: "extensiones", tag: "Polygel", precio: "$11", val: "11", serv: "Polygel Esculpido o Tips" },
+            { id: "1IHKec73cHVDag6k9oF1dpi9NbN5D9TWM", title: "Jelly Tip Nude Almendra", cat: "extensiones", tag: "Jelly Tip", precio: "$9", val: "9", serv: "Jelly Tip (Soft Gel)" },
+            { id: "1oozpKgmkCNvNud0hyYZq4tLm01SmMPrz", title: "Nivelación Rubber Natural", cat: "rubber", tag: "Nivelación", precio: "$8", val: "8", serv: "Nivelación con Base Rubber" },
+            { id: "1TnaCOzSME_gB--tI-BT6JWeQFt_X_qLL", title: "Terciopelo Ojo de Gato Rosa", cat: "nailart", tag: "Cat Eye", precio: "$8", val: "8", serv: "Nivelación con Base Rubber" },
+            { id: "1Zx-otJUYh_L76IrYc_lc9XREpF9KST5f", title: "Francés Amarillo Neón & Flor", cat: "nailart", tag: "Clean Look", precio: "$8", val: "8", serv: "Nivelación con Base Rubber" },
+            { id: "1lJK2GRViGistev73vYYaTgbi9xN5gYz8", title: "Uñas Vino Cherry & Destellos", cat: "rubber", tag: "Semipermanente", precio: "$6", val: "6", serv: "Manicura Semipermanente" },
+            { id: "1Py-z-G8t4kLOptk6Zx5RCQ6eiBTpynio", title: "Manicura Burbujas Rosas & 3D", cat: "nailart", tag: "Nail Art Pro", precio: "$8", val: "8", serv: "Nivelación con Base Rubber" },
+            { id: "1bNc7Q2XnFFIqq8a0DFThRn3IifK_lZmK", title: "Polygel Rosa con Flor 3D", cat: "extensiones", tag: "Polygel", precio: "$11", val: "11", serv: "Polygel Esculpido o Tips" },
+            { id: "1WrINhasN9kwRyE8VePvPnS7UAecQtXba", title: "Francesa con Marco de Oro", cat: "nailart", tag: "Diseño Gold", precio: "$9", val: "9", serv: "Jelly Tip (Soft Gel)" },
+            { id: "19yP9A2L-ujBNswzD6fDce_k9AgrG2VRW", title: "Manicura Rusa Nacarada Glazed", cat: "rubber", tag: "Efecto Glazed", precio: "$8", val: "8", serv: "Nivelación con Base Rubber" },
+            { id: "1Q5vyhKGXhQv8xHmYlVH4tHUg_cNbi5CW", title: "Polygel Cuadrado con Cristales", cat: "extensiones", tag: "Polygel", precio: "$11", val: "11", serv: "Polygel Esculpido o Tips" },
+            { id: "1uCqF1-hE53SDuSPXSoOu2eFN1aSZlw0w", title: "Nivelación Rubber Tono Nude", cat: "rubber", tag: "Rubber Base", precio: "$8", val: "8", serv: "Nivelación con Base Rubber" },
+            { id: "1babJmUwxpVGhFQYRtdkRLpfbQHmVWxdD", title: "Francesa Blanca Clásica", cat: "rubber", tag: "Semipermanente", precio: "$6", val: "6", serv: "Manicura Semipermanente" },
+            { id: "1T_cEmYvj-Eb6LWPj9MKC5835sL_g1teg", title: "Polygel Nude Reflectivo", cat: "extensiones", tag: "Polygel", precio: "$11", val: "11", serv: "Polygel Esculpido o Tips" },
+            { id: "1TLPPGrkJ1U8VnD3JUXegsO-u6GT4PYY4", title: "Efecto Ojo de Gato Galáctico", cat: "nailart", tag: "Cat Eye", precio: "$8", val: "8", serv: "Nivelación con Base Rubber" }
         ];
 
-        // Renderizado de Galería
+        // Renderizado de Galería Profesional con Autocompletado
         function renderizarGaleria(filtro = "todos") {
             const grid = document.getElementById("galeriaGrid");
             grid.innerHTML = "";
@@ -809,23 +881,39 @@
 
             filtradas.forEach(f => {
                 const card = document.createElement("div");
-                card.className = "glass-card rounded-xl overflow-hidden group relative flex flex-col";
+                card.className = "glass-card rounded-2xl overflow-hidden group relative flex flex-col cursor-pointer";
+                card.onclick = () => seleccionarModelo(f.title, f.serv, f.val);
+
                 card.innerHTML = `
                     <div class="relative aspect-square overflow-hidden bg-dark-900">
                         <img src="https://lh3.googleusercontent.com/d/${f.id}=w600" 
                              onerror="this.onerror=null; this.src='https://drive.google.com/thumbnail?id=${f.id}&sz=w600';" 
                              alt="${f.title} por JeniNails" 
                              loading="lazy" 
-                             class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                             class="w-full h-full object-cover group-hover:scale-108 transition duration-500">
+                        
+                        <!-- Badges en miniatura -->
+                        <div class="absolute top-2.5 left-2.5 badge-luxury px-2 py-0.5 rounded-md text-[9px] font-extrabold uppercase">
+                            ${f.tag}
+                        </div>
+                        <div class="absolute top-2.5 right-2.5 bg-dark-950/85 border border-gold/40 text-gold text-[10px] font-extrabold px-2 py-0.5 rounded-md shadow">
+                            ${f.precio}
+                        </div>
+
+                        <!-- Overlay hover elegante -->
                         <div class="absolute inset-0 bg-gradient-to-t from-dark-950 via-dark-950/40 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-3">
-                            <button onclick="prepararReserva('${f.title}', 'Foto de Galería: ${f.title}')" class="w-full py-1.5 px-2 bg-gradient-to-r from-gold to-champagne text-dark-950 text-[11px] font-bold rounded-lg shadow">
-                                Pedir este Diseño →
-                            </button>
+                            <span class="w-full py-2 px-2 bg-gradient-to-r from-gold via-champagne to-gold text-dark-950 text-xs font-bold rounded-xl shadow text-center flex items-center justify-center gap-1">
+                                <span>Quiero este diseño</span>
+                                <span>→</span>
+                            </span>
                         </div>
                     </div>
                     <div class="p-3">
-                        <h4 class="font-display text-xs font-bold text-white truncate">${f.title}</h4>
-                        <p class="text-[10px] text-stone-400 mt-0.5 truncate">${f.desc}</p>
+                        <h4 class="font-display text-xs sm:text-sm font-bold text-white truncate">${f.title}</h4>
+                        <div class="flex items-center justify-between mt-1 text-[10px] text-stone-400">
+                            <span>${f.serv}</span>
+                            <span class="text-gold font-bold">${f.precio}</span>
+                        </div>
                     </div>
                 `;
                 grid.appendChild(card);
@@ -840,9 +928,54 @@
             renderizarGaleria(cat);
         }
 
+        // Seleccionar modelo desde la galería con scroll y autocompletado instantáneo
+        function seleccionarModelo(titulo, servicioNombre, precioVal) {
+            const select = document.getElementById("servicioSelect");
+            for (let i = 0; i < select.options.length; i++) {
+                if (select.options[i].dataset.name === servicioNombre || select.options[i].text.includes(servicioNombre)) {
+                    select.selectedIndex = i;
+                    break;
+                }
+            }
+            
+            const disenoInput = document.getElementById("disenoIdea");
+            if (disenoInput) {
+                disenoInput.value = `Modelo: ${titulo}`;
+            }
+
+            calcularTotal();
+
+            // Mostrar toast
+            const toast = document.getElementById("selectionToast");
+            const toastName = document.getElementById("toastDesignName");
+            if (toast && toastName) {
+                toastName.innerText = titulo;
+                toast.classList.remove("hidden");
+            }
+
+            const agendar = document.getElementById("agendar");
+            if (agendar) {
+                agendar.scrollIntoView({ behavior: "smooth" });
+            }
+        }
+
+        function seleccionarServicioDirecto(servicioNombre, precioVal) {
+            const select = document.getElementById("servicioSelect");
+            for (let i = 0; i < select.options.length; i++) {
+                if (select.options[i].dataset.name.includes(servicioNombre) || select.options[i].text.includes(servicioNombre)) {
+                    select.selectedIndex = i;
+                    break;
+                }
+            }
+            calcularTotal();
+            const agendar = document.getElementById("agendar");
+            if (agendar) agendar.scrollIntoView({ behavior: "smooth" });
+        }
+
         // Calculadora de Total
         function calcularTotal() {
-            const servicio = parseFloat(document.getElementById("servicioSelect").value) || 6;
+            const select = document.getElementById("servicioSelect");
+            const servicio = parseFloat(select.value) || 6;
             let extras = 0;
             if (document.getElementById("extraCatEye").checked) extras += 1;
             if (document.getElementById("extraFrancesa").checked) extras += 1;
@@ -854,35 +987,23 @@
             return total;
         }
 
-        function prepararReserva(nombreServicio, nota = "") {
-            const select = document.getElementById("servicioSelect");
-            for (let i = 0; i < select.options.length; i++) {
-                if (select.options[i].text.includes(nombreServicio) || nombreServicio.includes(select.options[i].dataset.name)) {
-                    select.selectedIndex = i;
-                    break;
-                }
-            }
-            calcularTotal();
-            const agendarSec = document.getElementById("agendar");
-            if (agendarSec) agendarSec.scrollIntoView({ behavior: "smooth" });
-        }
-
         function enviarWhatsApp() {
             const nombre = document.getElementById("nombreCliente").value.trim() || "Cliente";
             const select = document.getElementById("servicioSelect");
             const servicioNombre = select.options[select.selectedIndex].dataset.name || select.options[select.selectedIndex].text;
+            const diseno = document.getElementById("disenoIdea").value.trim() || "A coordinar";
             const fecha = document.getElementById("fechaCita").value;
-            const hora = document.getElementById("horaCita").value;
+            const turno = document.getElementById("horaCita").value;
             const total = document.getElementById("totalMonto").innerText;
 
             const extras = [];
             if (document.getElementById("extraCatEye").checked) extras.push("Efecto Ojo de Gato (+$1)");
             if (document.getElementById("extraFrancesa").checked) extras.push("Francesa / Chrome (+$1)");
-            if (document.getElementById("extraRetiro").checked) extras.push("Retiro de Sistema Previo (+$2)");
+            if (document.getElementById("extraRetiro").checked) extras.push("Retiro Previo (+$2)");
             if (document.getElementById("extraCristales").checked) extras.push("Cristales / Glitter (+$1)");
-            const extrasTexto = extras.length > 0 ? `\n• Extras: ${extras.join(", ")}` : "";
+            const extrasTexto = extras.length > 0 ? `\n• *Extras:* ${extras.join(", ")}` : "";
 
-            const mensaje = `¡Hola Jeni! 💅✨\nMi nombre es *${nombre}*.\nQuisiera agendar una cita en tu estudio en Barquisimeto:\n\n• *Servicio:* ${servicioNombre}${extrasTexto}\n• *Fecha estimada:* ${fecha || "A convenir"}\n• *Hora:* ${hora}\n• *Total estimado:* ${total}\n\n¿Tienes disponibilidad para ese día? ¡Muchas gracias! 💕`;
+            const mensaje = `¡Hola Jeni! 💅✨\nMi nombre es *${nombre}*.\nQuisiera agendar una cita en tu estudio en Barquisimeto:\n\n• *Servicio:* ${servicioNombre}\n• *Diseño o idea:* ${diseno}${extrasTexto}\n• *Fecha estimada:* ${fecha || "A convenir"}\n• *Turno:* ${turno}\n• *Total estimado:* ${total}\n\n¿Tienes disponibilidad para ese día? ¡Muchas gracias! 💕`;
             const url = `https://wa.me/584245766425?text=${encodeURIComponent(mensaje)}`;
             window.open(url, "_blank");
         }
@@ -896,7 +1017,7 @@
                 text: "https://jeninails.vercel.app/?ref=qr",
                 width: 190,
                 height: 190,
-                colorDark: "#0F0B16",
+                colorDark: "#0D0914",
                 colorLight: "#FAF4ED",
                 correctLevel: QRCode.CorrectLevel.H
             });
@@ -938,7 +1059,7 @@
         }
 
         /* ==============================================================
-           MOTOR 4D DE FONDO: VELVET CAT-EYE GEL & GALAXIA CÓSMICA INTERACTIVA
+           CANVAS CAT-EYE GEL & MICRO-GLITTER DE ALTA VELOCIDAD
            ============================================================== */
         (function initCatEyeGalaxyEngine() {
             const canvas = document.getElementById("catEyeCanvas");
@@ -949,8 +1070,7 @@
             let targetMouseX = 0, targetMouseY = 0;
             let time = 0;
 
-            // Micro-partículas de glitter y polvo de diamante galáctico
-            const particleCount = 75;
+            const particleCount = 80;
             const particles = [];
 
             function resize() {
@@ -964,12 +1084,12 @@
                 particles.push({
                     x: Math.random() * window.innerWidth,
                     y: Math.random() * window.innerHeight,
-                    radius: Math.random() * 1.8 + 0.4,
-                    alpha: Math.random() * 0.7 + 0.2,
-                    speedY: Math.random() * 0.4 + 0.1,
-                    speedX: (Math.random() - 0.5) * 0.3,
-                    twinkleSpeed: Math.random() * 0.03 + 0.01,
-                    color: Math.random() > 0.4 ? "#D8B478" : (Math.random() > 0.5 ? "#FF0080" : "#7928CA")
+                    radius: Math.random() * 2.0 + 0.5,
+                    alpha: Math.random() * 0.75 + 0.25,
+                    speedY: Math.random() * 0.35 + 0.12,
+                    speedX: (Math.random() - 0.5) * 0.25,
+                    twinkleSpeed: Math.random() * 0.04 + 0.015,
+                    color: Math.random() > 0.4 ? "#D8B478" : (Math.random() > 0.5 ? "#FF007F" : "#8A2BE2")
                 });
             }
 
@@ -988,69 +1108,49 @@
             resize();
 
             function render() {
-                time += 0.008;
-                // Suavizado inercial del movimiento magnético
-                mouseX += (targetMouseX - mouseX) * 0.05;
-                mouseY += (targetMouseY - mouseY) * 0.05;
+                time += 0.009;
+                mouseX += (targetMouseX - mouseX) * 0.06;
+                mouseY += (targetMouseY - mouseY) * 0.06;
 
                 ctx.clearRect(0, 0, w, h);
 
-                // 1. Haz de Luz Magnético "Ojo de Gato" (Cat-Eye Velvet Beam)
-                const beamCenterX = w * 0.5 + Math.sin(time * 0.7) * (w * 0.28) + (mouseX - w * 0.5) * 0.25;
-                const beamCenterY = h * 0.5 + Math.cos(time * 0.5) * (h * 0.22) + (mouseY - h * 0.5) * 0.25;
-                const angle = 0.55 + Math.sin(time * 0.4) * 0.25;
+                // 1. Haz Magnético Ojo de Gato móvil (Siempre activo, oscilación continua)
+                const beamX = w * 0.5 + Math.sin(time * 0.8) * (w * 0.3) + (mouseX - w * 0.5) * 0.25;
+                const beamY = h * 0.5 + Math.cos(time * 0.6) * (h * 0.25) + (mouseY - h * 0.5) * 0.25;
+                const angle = 0.6 + Math.sin(time * 0.5) * 0.3;
 
-                // Gradiente radial multidimensional del haz magnético
-                const gradVelvet = ctx.createRadialGradient(
-                    beamCenterX, beamCenterY, 10,
-                    beamCenterX, beamCenterY, Math.max(w, h) * 0.65
+                const gradBeam = ctx.createRadialGradient(
+                    beamX, beamY, 15,
+                    beamX, beamY, Math.max(w, h) * 0.65
                 );
-                gradVelvet.addColorStop(0, "rgba(255, 0, 128, 0.22)");       // Magenta brillo cat-eye
-                gradVelvet.addColorStop(0.25, "rgba(121, 40, 202, 0.18)");   // Violeta terciopelo
-                gradVelvet.addColorStop(0.5, "rgba(216, 180, 120, 0.14)");    // Destello dorado champagne
-                gradVelvet.addColorStop(0.75, "rgba(0, 242, 254, 0.06)");    // Reflejo galáctico cian
-                gradVelvet.addColorStop(1, "rgba(0, 0, 0, 0)");
+                gradBeam.addColorStop(0, "rgba(255, 0, 127, 0.28)");
+                gradBeam.addColorStop(0.3, "rgba(138, 43, 226, 0.22)");
+                gradBeam.addColorStop(0.6, "rgba(216, 180, 120, 0.18)");
+                gradBeam.addColorStop(0.85, "rgba(0, 242, 254, 0.08)");
+                gradBeam.addColorStop(1, "rgba(0, 0, 0, 0)");
 
                 ctx.save();
-                ctx.translate(beamCenterX, beamCenterY);
+                ctx.translate(beamX, beamY);
                 ctx.rotate(angle);
-                ctx.scale(1.8, 0.45); // Hace la forma ovalada/franja típica del imán ojo de gato
-                ctx.fillStyle = gradVelvet;
+                ctx.scale(2.0, 0.45);
+                ctx.fillStyle = gradBeam;
                 ctx.beginPath();
                 ctx.arc(0, 0, Math.max(w, h) * 0.55, 0, Math.PI * 2);
                 ctx.fill();
                 ctx.restore();
 
-                // 2. Haz secundario móvil (cruzado estilo 4D / holograma)
-                const beam2X = w * 0.35 + Math.cos(time * 0.6) * (w * 0.2);
-                const beam2Y = h * 0.65 + Math.sin(time * 0.8) * (h * 0.2);
-                const grad2 = ctx.createRadialGradient(beam2X, beam2Y, 5, beam2X, beam2Y, w * 0.45);
-                grad2.addColorStop(0, "rgba(216, 180, 120, 0.16)");
-                grad2.addColorStop(0.4, "rgba(255, 0, 128, 0.10)");
-                grad2.addColorStop(1, "rgba(0, 0, 0, 0)");
-
-                ctx.save();
-                ctx.translate(beam2X, beam2Y);
-                ctx.rotate(-angle * 0.8);
-                ctx.scale(1.5, 0.35);
-                ctx.fillStyle = grad2;
-                ctx.beginPath();
-                ctx.arc(0, 0, w * 0.45, 0, Math.PI * 2);
-                ctx.fill();
-                ctx.restore();
-
-                // 3. Destellos de Glitter / Polvo de Diamante Flotante
+                // 2. Micro-glitter estelar flotante
                 for (let i = 0; i < particles.length; i++) {
                     const p = particles[i];
                     p.y -= p.speedY;
                     p.x += p.speedX;
-                    p.alpha += Math.sin(time * 10 + i) * p.twinkleSpeed;
+                    p.alpha += Math.sin(time * 8 + i) * p.twinkleSpeed;
 
                     if (p.y < -10) p.y = h + 10;
                     if (p.x < -10) p.x = w + 10;
                     if (p.x > w + 10) p.x = -10;
 
-                    const curAlpha = Math.max(0.1, Math.min(0.85, p.alpha));
+                    const curAlpha = Math.max(0.1, Math.min(0.9, p.alpha));
                     ctx.save();
                     ctx.beginPath();
                     ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
@@ -1068,7 +1168,6 @@
             render();
         })();
 
-        // Inicialización al Cargar
         document.addEventListener("DOMContentLoaded", () => {
             renderizarGaleria("todos");
             generarQR();
